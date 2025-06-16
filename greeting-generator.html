@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>JS Greeting APP</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JS Greeting APP</title>
 </head>
 <body>
-<script>
-	let userName="Pooja"
-	let currentHouur=14;
-	let greeting="";
 
-	if(currentHouur < 12){
-		greeting="Good Morning";
-		}else if(currentHouur < 18) {
-			greeting="Good Afternoon";
-		}
-		else{
-greeting="Good Evening";
-		}
-		console.log(greeting+","+userName+"!");
-</script>
+  <p id="result"></p> <!-- Move this OUTSIDE the script -->
+
+  <script>
+    let userName = "Pooja";
+    let currentHour = 14;
+    let greeting = "";
+
+    if (currentHour < 12) {
+      greeting = "Good Morning";
+    } else if (currentHour < 18) {
+      greeting = "Good Afternoon";
+    } else {
+      greeting = "Good Evening";
+    }
+
+    document.getElementById("result").textContent = greeting + ", " + userName + "!";
+  </script>
+
 </body>
 </html>
