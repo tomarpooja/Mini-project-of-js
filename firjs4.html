@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Day Name Generator</title>
+</head>
+<body>
+  <h2>What Day Is It?</h2>
+  <p id="day"></p>
+
+  <script>
+    let dayNumber = 3;  // try changing this from 0 to 6
+    let dayName = "";
+
+    switch(dayNumber) {
+      case 0:
+        dayName = "Sunday";
+        break;
+      case 1:
+        dayName = "Monday";
+        break;
+      case 2:
+        dayName = "Tuesday";
+        break;
+      case 3:
+        dayName = "Wednesday";
+        break;
+      case 4:
+        dayName = "Thursday";
+        break;
+      case 5:
+        dayName = "Friday";
+        break;
+      case 6:
+        dayName = "Saturday";
+        break;
+      default:
+        dayName = "Invalid Day!";
+    }
+
+    document.getElementById("day").textContent = "Today is: " + dayName;
+  </script>
+</body>
+</html>
