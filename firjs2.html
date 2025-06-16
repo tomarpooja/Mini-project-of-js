@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Simple Calculator</title>
+</head>
+<body>
+	<script>
+let num1=20;
+let num2=10;
+let operator="+";
+let result;
+
+if(operator === "+"){
+	result=num1+num2;
+}else if(operator === "-"){
+	result=num1-num2;
+}else if(operator === "*"){
+	result=num1*num2;
+}else if(operator === "/")
+{
+	result=num1/num2;
+}
+else{
+	result="INVALID OPERATOR";
+}
+console.log("Result",result)
+</script>
+</body>
+</html>
