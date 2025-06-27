@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sum App</title>
+</head>
+<body>
+
+<h2 id="sumResult">Result will show here</h2>
+<button onclick="calculateSum()">Add 5 + 10</button>
+
+<script>
+  function calculateSum() {
+    let num1 = 5;
+    let num2 = 10;
+    let result = num1 + num2;
+    document.getElementById("sumResult").textContent = "Sum is: " + result;
+  }
+</script>
+
+</body>
+</html>
+
